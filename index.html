@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Rahman | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #141a22;
+      --text: #e6e6e6;
+      --muted: #9aa4b2;
+      --accent: #3fa9f5;
+    }
+    body.light {
+      --bg: #f4f6f9;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #4b5563;
+      --accent: #2563eb;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.4rem; margin-bottom: 0.3rem; }
+    header p { color: var(--muted); margin: 0; }
+    .toggle {
+      margin-top: 1rem;
+      background: none;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 { margin-top: 0; }
+    .project { margin-bottom: 1.2rem; }
+    .project h3 { margin-bottom: 0.2rem; }
+    .timeline-item { margin-bottom: 1rem; }
+    ul.skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.4rem;
+      list-style: none;
+      padding: 0;
+    }
+    ul.skills li {
+      background: rgba(255,255,255,0.05);
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Abdul Rahman</h1>
+    <p>Biomedical Engineering Undergraduate | Electronics & Systems Design</p>
+    <button class="toggle" onclick="document.body.classList.toggle('light')">Toggle Theme</button>
+  </header>
+
+  <section>
+    <div class="card about">
+      <h2>About</h2>
+      <div style="display:flex; gap:1.5rem; align-items:flex-start; flex-wrap:wrap;">
+        <img src="profile.jpg" alt="Profile photo" style="width:140px;height:140px;border-radius:12px;object-fit:cover;" />
+        <p>
+          Biomedical Engineering undergraduate with strong foundations in electronics, embedded systems, and biomedical device design. 
+          Experienced in end-to-end project development including problem identification, circuit design, PCB layout, prototyping, and validation.
+        </p>
+      </div>
+      <p style="margin-top:1rem;">
+        <a href="Abdul_Rahman_CV.pdf" download style="color:var(--accent);text-decoration:none;">⬇ Download CV</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Analog Automatic Solar Tracker (RaDAR)</h3>
+        <p><em>University of Moratuwa | Sep 2025 – Dec 2025</em></p>
+        <p>
+          Fully analog single-axis solar tracker designed to maximise photovoltaic energy capture without microcontrollers. 
+          Utilised LDR-based differential sensing, analog PID control with op-amps, PWM motor control via L298N, and DC motor actuation. 
+          Designed a custom 4-layer PCB in Altium Designer, simulated in LTspice, and fabricated with a SOLIDWORKS-designed enclosure.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Temperature-Controlled Vaccine Cold Chain Monitoring System</h3>
+        <p><em>University of Moratuwa | Oct 2025 – Nov 2025</em></p>
+        <p>
+          Low-cost cold-chain monitoring solution for vaccine transportation in low-resource settings. 
+          Focused on sensor integration, wireless alerts, regulatory pathway analysis (FDA Class I/II), and functional validation using the Biodesign methodology.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Smart Posture Cushion (P.A.P.A.Y.A.) – PulseCode</h3>
+        <p><em>University of Moratuwa | Feb 2025 – Jul 2025</em></p>
+        <p>
+          Smart cushion providing real-time posture feedback using FSR sensors, ultrasonic sensing, ATmega328P processing, and vibration alerts. 
+          Included custom PCB design, SolidWorks enclosure modelling, battery management, and user-centred design principles.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Experience & Leadership</h2>
+
+      <div class="timeline-item">
+        <strong>Committee Member – Industrial Relations (IR)</strong><br />
+        Electronic Club, University of Moratuwa (Jul 2025 – Present)<br />
+        Committee management, industry coordination, and external relations.
+      </div>
+
+      <div class="timeline-item">
+        <strong>Social Media Manager</strong><br />
+        IEEE EMBS Student Branch Chapter, University of Moratuwa (Jul 2025 – Present)<br />
+        Managed technical outreach, biomedical awareness content, and chapter branding.
+      </div>
+
+      <div class="timeline-item">
+        <strong>Committee Member</strong><br />
+        IEEE EMBS Student Branch Chapter, University of Moratuwa (Jan 2025 – Dec 2025)
+      </div>
+
+      <div class="timeline-item">
+        <strong>Batch Representative – Year 24/25</strong><br />
+        Electronic & Telecommunication Engineering, University of Moratuwa (Jan 2025 – Present)<br />
+        Acted as liaison between faculty and students, coordinating academic and administrative matters.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <div class="timeline-item">
+        <strong>BSc (Hons) Engineering – Biomedical Engineering</strong><br />
+        University of Moratuwa (2024 – 2028)<br />
+        GPA: 3.86 (Semester 1, Dean’s List)
+      </div>
+      <div class="timeline-item">
+        <strong>GCE Advanced Level</strong><br />
+        Zahira College (2020 – 2023)<br />
+        3A – Combined Mathematics, Physics, Chemistry | District Rank: 101
+      </div>
+      <div class="timeline-item">
+        <strong>GCE Ordinary Level</strong><br />
+        Carey College – Colombo 08 (2009 – 2019)
+      </div>
+      <div class="timeline-item">
+        <strong>ACCA – Accounting & Finance</strong><br />
+        Financial Accounting & Management Accounting (Completed)
+      </div>
+    </div>
+      <div class="timeline-item">
+        <strong>GCE Advanced Level</strong><br />
+        Zahira College (2020 – 2023)<br />
+        3A – Combined Mathematics, Physics, Chemistry | District Rank: 101
+      </div>
+      <div class="timeline-item">
+        <strong>GCE Ordinary Level</strong><br />
+        Carey College – Colombo 08 (2009 – 2019)
+      </div>
+      <div class="timeline-item">
+        <strong>ACCA – Accounting & Finance</strong><br />
+        Financial Accounting & Management Accounting (Completed)
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Analog Electronics</li>
+        <li>PID Control Systems</li>
+        <li>PWM Motor Control</li>
+        <li>PCB Design & Altium Designer</li>
+        <li>Embedded Systems</li>
+        <li>Biomedical Device Design</li>
+        <li>Medical Imaging & Image Analysis</li>
+        <li>Signal Processing & MATLAB</li>
+        <li>Machine Learning & Predictive Modelling</li>
+        <li>Supervised Learning & Feature Engineering</li>
+        <li>Deep Learning & Computer Vision</li>
+        <li>IoT & ESP32 Integration</li>
+        <li>Sensors & Data Acquisition</li>
+        <li>System Simulation & Prototyping</li>
+        <li>Regulatory Analysis</li>
+        <li>Product Enclosure Design (SOLIDWORKS)</li>
+        <li>Financial Accounting & Management Accounting</li>
+        <li>Committee & External Relations Management</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Abdul Rahman · Hosted on GitHub Pages
+  </footer>
+</body>
+</html>
