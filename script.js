@@ -314,7 +314,16 @@ scrollTopBtn.addEventListener('mouseleave', () => {
 window.addEventListener('load', () => {
   document.body.style.visibility = 'visible';
 });
-
+// ==========================================
+document.querySelectorAll('.honor-image').forEach(img => {
+  if (img.complete) {
+    img.classList.add('loaded');
+  } else {
+    img.addEventListener('load', () => {
+      img.classList.add('loaded');
+    });
+  }
+});
 // ==========================================
 // PERFORMANCE OPTIMIZATION
 // ==========================================
