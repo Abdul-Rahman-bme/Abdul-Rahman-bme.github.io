@@ -228,33 +228,8 @@ experienceCards.forEach(card => {
 });
 
 // ==========================================
-// TYPING EFFECT FOR HERO TITLE (OPTIONAL)
+// SCROLL TO TOP BUTTON
 // ==========================================
-// Uncomment if you want a typing effect on the hero title
-/*
-const heroTitle = document.querySelector('.hero-title');
-const titleText = heroTitle.textContent;
-heroTitle.textContent = '';
-
-let i = 0;
-function typeWriter() {
-  if (i < titleText.length) {
-    heroTitle.textContent += titleText.charAt(i);
-    i++;
-    setTimeout(typeWriter, 100);
-  }
-}
-
-// Start typing effect after page load
-window.addEventListener('load', () => {
-  setTimeout(typeWriter, 500);
-});
-*/
-
-// ==========================================
-// SCROLL TO TOP BUTTON (OPTIONAL)
-// ==========================================
-// Create scroll-to-top button
 const scrollTopBtn = document.createElement('button');
 scrollTopBtn.innerHTML = '↑';
 scrollTopBtn.className = 'scroll-to-top';
@@ -314,16 +289,48 @@ scrollTopBtn.addEventListener('mouseleave', () => {
 window.addEventListener('load', () => {
   document.body.style.visibility = 'visible';
 });
+
 // ==========================================
+// HONOR IMAGE LOADING
+// ==========================================
+// Fix: the placeholder overlay is an absolutely-positioned element that sits
+// on top of the <img>. Previously this script only toggled a "loaded" class
+// on the <img> itself, which made the image visible underneath the overlay
+// but never actually hid the overlay — so the "Add Image" placeholder stayed
+// on screen even when the real photo had loaded successfully.
+// Fix: mark the *container* as loaded and let CSS hide the overlay based on
+// that, and fall back to showing the overlay (with an "image missing"
+// message) if the image genuinely fails to load (404, bad path, etc).
 document.querySelectorAll('.honor-image').forEach(img => {
-  if (img.complete) {
+  const container = img.closest('.honor-image-placeholder');
+  const overlay = container ? container.querySelector('.image-placeholder-overlay') : null;
+
+  const markLoaded = () => {
     img.classList.add('loaded');
+    if (container) container.classList.add('loaded');
+  };
+
+  const markMissing = () => {
+    if (overlay) {
+      const label = overlay.querySelector('p');
+      if (label) label.textContent = `Image not found: ${img.getAttribute('src')}`;
+    }
+  };
+
+  // img.complete is true both when an image has loaded AND when it has
+  // failed to load, so naturalWidth is checked to tell those two apart.
+  if (img.complete) {
+    if (img.naturalWidth > 0) {
+      markLoaded();
+    } else {
+      markMissing();
+    }
   } else {
-    img.addEventListener('load', () => {
-      img.classList.add('loaded');
-    });
+    img.addEventListener('load', markLoaded);
+    img.addEventListener('error', markMissing);
   }
 });
+
 // ==========================================
 // PERFORMANCE OPTIMIZATION
 // ==========================================
