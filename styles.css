@@ -279,7 +279,8 @@ body.light .moon-icon {
 }
 
 /* Research Interests in Hero */
-.research-interests-hero {
+.research-interests-hero,
+.coursework-hero {
   background: var(--bg-tertiary);
   padding: 1.5rem;
   border-radius: var(--radius-lg);
@@ -287,7 +288,8 @@ body.light .moon-icon {
   margin-bottom: 2rem;
 }
 
-.research-interests-hero h3 {
+.research-interests-hero h3,
+.coursework-hero h3 {
   font-size: var(--font-size-lg);
   margin-bottom: 1rem;
   color: var(--text-primary);
@@ -493,6 +495,41 @@ body.light .moon-icon {
 
 .cert-details li {
   margin-bottom: 0.5rem;
+}
+
+/* ==========================================
+   TECHNICAL SKILLS SECTION
+   ========================================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background: var(--bg-tertiary);
+  padding: 1.5rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-base);
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--shadow-md);
+  border-color: var(--accent-primary);
+}
+
+.skill-category h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 /* ==========================================
