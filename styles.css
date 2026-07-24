@@ -735,6 +735,16 @@ body.light .moon-icon {
   padding: 2rem;
 }
 
+/* Fix: previously this overlay had no rule hiding it once the real image
+   loaded, so it sat on top of the <img> at all times and blocked it from
+   view even after loading successfully. The .loaded class is added to the
+   parent container by script.js once the image is confirmed to have
+   loaded (checked via naturalWidth, not just the "complete" flag), and the
+   overlay is hidden at that point. It stays visible if the image 404s. */
+.honor-image-placeholder.loaded .image-placeholder-overlay {
+  display: none;
+}
+
 .image-placeholder-overlay svg {
   margin-bottom: 1rem;
   opacity: 0.5;
