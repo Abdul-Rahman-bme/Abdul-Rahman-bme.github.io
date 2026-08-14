@@ -159,8 +159,20 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .profile-links a:hover { color: var(--accent); }
 
 .hero-panel { background: var(--surface); border: 1px solid var(--border); padding: 1.1rem; border-radius: 26px; box-shadow: var(--shadow); }
-.portrait-shell { position: relative; overflow: hidden; aspect-ratio: 4/3; border-radius: 18px; background: linear-gradient(135deg, var(--accent-soft), var(--surface-soft)); }
-.portrait { width: 100%; height: 100%; object-fit: cover; }
+.portrait-shell {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--accent-soft), var(--surface-soft));
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
 .portrait-fallback { display: none; width: 100%; height: 100%; place-items: center; font-size: 5rem; font-weight: 850; color: var(--accent); letter-spacing: -.08em; }
 .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; margin-top: .8rem; }
 .summary-grid div { padding: .85rem; border-radius: 14px; background: var(--surface-soft); }
