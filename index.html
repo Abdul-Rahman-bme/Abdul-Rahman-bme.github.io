@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Abdul Rahman Mohamed Farharth, a Biomedical Engineering undergraduate at the University of Moratuwa working across biomedical sensing, embedded healthcare systems, signal processing and AI for healthcare.">
+  <meta name="keywords" content="Biomedical Engineering, Biomedical Sensing, Embedded Systems, Biomedical Signal Processing, Medical AI, Computer Vision, IoT, University of Moratuwa">
+  <meta name="author" content="Abdul Rahman Mohamed Farharth">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="Abdul Rahman Mohamed Farharth | Biomedical Engineering Portfolio">
+  <meta property="og:description" content="Biomedical sensing, embedded healthcare systems, biomedical signal processing and AI for healthcare.">
+  <meta property="og:type" content="website">
+  <title>Abdul Rahman Mohamed Farharth | Biomedical Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Home">AR</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle color theme">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Biomedical Engineering · University of Moratuwa</p>
+          <h1>Abdul Rahman<br>Mohamed Farharth</h1>
+          <p class="hero-lead">
+            Third-year Biomedical Engineering undergraduate building practical systems across biomedical sensing,
+            embedded hardware, physiological signal processing, computer vision and healthcare AI.
+          </p>
+
+          <div class="interest-list" aria-label="Research interests">
+            <span>Biomedical Sensing</span>
+            <span>Embedded Healthcare Systems</span>
+            <span>Biomedical Signal Processing</span>
+            <span>AI for Healthcare</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-secondary" href="Abdul_Rahman_CV.pdf" target="_blank" rel="noopener">View CV</a>
+          </div>
+
+          <div class="profile-links" aria-label="Professional links">
+            <a href="mailto:abdulrahmanfarharth@gmail.com">Email</a>
+            <a href="https://github.com/Abdul-Rahman-bme" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/abdulrahmanmf/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Academic profile summary">
+          <div class="portrait-shell">
+            <img src="images/profile.jpg" alt="Abdul Rahman Mohamed Farharth" class="portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="portrait-fallback" aria-hidden="true">AR</div>
+          </div>
+          <div class="summary-grid">
+            <div><strong>3.83/4.00</strong><span>CGPA</span></div>
+            <div><strong>3</strong><span>Dean's List semesters</span></div>
+            <div><strong>2028</strong><span>Expected graduation</span></div>
+            <div><strong>5</strong><span>Project domains</span></div>
+          </div>
+          <p class="availability-note">Seeking research and engineering internship opportunities in biomedical R&amp;D, health-tech and related areas.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow reveal">
+        <p class="section-kicker">Profile</p>
+        <h2>About</h2>
+        <p class="lead-copy">
+          I enjoy working across the full engineering stack: sensing and electronics, embedded control and communication,
+          signal or image processing, intelligent algorithms, and system-level validation. My projects span human-centred
+          biomedical systems, EEG/BCI, medical imaging, computer vision, IoT monitoring, analog electronics and digital hardware.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">Selected work</p>
+            <h2>Projects</h2>
+          </div>
+          <p>Projects are grouped by domain so the breadth of my work is clear without losing technical focus.</p>
+        </div>
+
+        <div class="project-jump reveal" aria-label="Project categories">
+          <a href="#projects-hci">HCI &amp; Wearables</a>
+          <a href="#projects-medical-ai">Medical AI &amp; Signals</a>
+          <a href="#projects-vision">Computer Vision</a>
+          <a href="#projects-iot">IoT</a>
+          <a href="#projects-hardware">Hardware &amp; Instrumentation</a>
+        </div>
+
+        <div class="project-group" id="projects-hci">
+          <div class="project-group-heading reveal">
+            <span class="group-index">01</span>
+            <div><h3>HCI &amp; Wearable Systems</h3><p>Human-centred sensing, feedback and interactive biomedical prototypes.</p></div>
+          </div>
+          <div class="project-grid">
+            <article class="project-card featured reveal">
+              <div class="project-topline"><span class="project-domain">HCI · Biomedical</span><time>Jan 2025 - Apr 2025</time></div>
+              <h4>Smart Posture Monitoring Cushion (P.A.P.A.Y.A.)</h4>
+              <p>Developed a real-time posture-monitoring cushion using eight FSR402 pressure sensors and ultrasonic backrest sensing, with vibrotactile feedback for slouch alerts. Achieved approximately 70% slouch-detection accuracy and designed the sensor-integrated enclosure in SOLIDWORKS.</p>
+              <p class="project-note">2nd Runner-Up, Brainstorm 2025 · 95-person needs survey used to inform the design problem.</p>
+              <div class="tech-row"><span>Embedded sensing</span><span>Haptics</span><span>Arduino</span><span>SOLIDWORKS</span></div>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/PulseCode-Posture-Cushion-P.A.P.A.Y.A-" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group" id="projects-medical-ai">
+          <div class="project-group-heading reveal">
+            <span class="group-index">02</span>
+            <div><h3>Medical AI &amp; Biomedical Signal Processing</h3><p>Physiological signals, medical images and data-driven healthcare models.</p></div>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-topline"><span class="project-domain">EEG · BCI</span><time>Aug 2026 - Present</time></div>
+              <h4>EEG-Based Motor Imagery Classification</h4>
+              <p>Developing an offline motor-imagery BCI pipeline using PhysioNet EEG data, 8-30 Hz filtering, epoch extraction, CSP features, LDA and stratified cross-validation, with regularized CSP-LDA evaluation.</p>
+              <div class="tech-row"><span>MNE</span><span>PyRiemann</span><span>scikit-learn</span><span>Python</span></div>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/EEG-BCI-project" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline"><span class="project-domain">Medical Imaging · AI</span><time>Jan 2026 - Apr 2026</time></div>
+              <h4>Thyroid Nodule Detection &amp; Malignancy Classification</h4>
+              <p>Developed and evaluated a PyTorch-based ultrasound image pipeline for thyroid nodule detection and benign/malignant classification, with an interactive Gradio interface.</p>
+              <div class="tech-row"><span>PyTorch</span><span>Ultrasound</span><span>Medical imaging</span><span>Gradio</span></div>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/Thyroid-nodule-detection-and-classification" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+
+            <article class="project-card compact reveal">
+              <div class="project-topline"><span class="project-domain">Healthcare ML</span><time>2026</time></div>
+              <h4>Heart Disease Prediction</h4>
+              <p>Built a classical ML pipeline on the UCI Cleveland dataset with preprocessing, model comparison, 5-fold cross-validation and threshold analysis; logistic regression achieved 86.9% test accuracy.</p>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/heart-disease-prediction" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+
+            <article class="project-card compact reveal">
+              <div class="project-topline"><span class="project-domain">Signal Processing</span><time>2025</time></div>
+              <h4>Automatic Speaker Recognition System</h4>
+              <p>Implemented FFT-based audio preprocessing in MATLAB and integrated it with an MFCC feature-extraction and speaker-classification pipeline.</p>
+              <a class="text-link" href="https://github.com/DPHeshanRanasinghe/An-Automatic-Speaker-Recognition-System" target="_blank" rel="noopener">Team repository ↗</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group" id="projects-vision">
+          <div class="project-group-heading reveal">
+            <span class="group-index">03</span>
+            <div><h3>Computer Vision &amp; Intelligent Systems</h3><p>Real-time visual inference, automation and perception-to-action systems.</p></div>
+          </div>
+          <div class="project-grid">
+            <article class="project-card featured reveal">
+              <div class="project-topline"><span class="project-domain">Computer Vision · Robotics</span><time>Jan 2026 - Jul 2026</time></div>
+              <h4>Glove Rejection and Inspection Process (GRIP)</h4>
+              <p>Developed a real-time glove inspection and classification system integrating YOLO/OpenCV inference, camera sensing, STM32-based control, embedded communication and SCARA robotic actuation.</p>
+              <div class="tech-row"><span>YOLO</span><span>OpenCV</span><span>STM32</span><span>Robotics</span></div>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/Glove-Rejection-Inspection-System" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline"><span class="project-domain">Computer Vision</span><time>2026</time></div>
+              <h4>Large-Scale License Plate Detection with YOLO11</h4>
+              <p>Fine-tuned YOLO11s on 27,900 images for license-plate localization, reaching mAP50 0.918 and precision 0.956, then extended the pipeline with EasyOCR-based text extraction.</p>
+              <div class="tech-row"><span>YOLO11</span><span>OpenCV</span><span>EasyOCR</span><span>PyTorch</span></div>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/large-number-plate-detection" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+
+            <article class="project-card compact reveal">
+              <div class="project-topline"><span class="project-domain">Vision · Interaction</span><time>2026</time></div>
+              <h4>Hand Gesture Recognition</h4>
+              <p>Built a modular real-time hand-tracking and finger-counting system using Python, OpenCV, MediaPipe and geometric landmark logic.</p>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/Hand-Gesture-Recognition-OpenCV" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group" id="projects-iot">
+          <div class="project-group-heading reveal">
+            <span class="group-index">04</span>
+            <div><h3>IoT &amp; Connected Monitoring Systems</h3><p>Embedded sensing, wireless communication and remote monitoring.</p></div>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-topline"><span class="project-domain">Healthcare IoT</span><time>Jun 2025 - Sep 2025</time></div>
+              <h4>Temperature-Controlled Vaccine Cold-Chain Monitoring</h4>
+              <p>Co-developed a portable vaccine-monitoring system using ESP8266/ESP32-S3, DS18B20 sensing, ESP-NOW communication and configurable alerts. Contributed to wireless architecture, calibration, debugging and enclosure design.</p>
+              <p class="project-note">Validated stable wireless transmission to approximately 30 m line-of-sight.</p>
+              <div class="tech-row"><span>ESP-NOW</span><span>ESP32-S3</span><span>ESP8266</span><span>Embedded C/C++</span></div>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/Temperature-Controlled-Vaccine-Cooler" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline"><span class="project-domain">IoT · Embedded</span><time>Jul 2025</time></div>
+              <h4>IoT Smart Energy Meter with MQTT &amp; Alerts</h4>
+              <p>Independently developed an ESP32-based energy monitor using PZEM-004T sensing, embedded C++ firmware, MQTT communication, local display and automated Telegram/SMS threshold alerts.</p>
+              <div class="tech-row"><span>ESP32</span><span>MQTT</span><span>C++</span><span>IoT</span></div>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/iot-smart-energy-meter" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group" id="projects-hardware">
+          <div class="project-group-heading reveal">
+            <span class="group-index">05</span>
+            <div><h3>Instrumentation, Electronics &amp; Embedded Hardware</h3><p>Analog electronics, power stages, PCB-oriented design and digital hardware.</p></div>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-topline"><span class="project-domain">Power Electronics</span><time>Jan 2026 - Jun 2026</time></div>
+              <h4>Class-D Audio Amplifier</h4>
+              <p>Designed and tested a Class-D amplifier with tone control, approximately 350 kHz PWM generation, MOSFET gate driving, LC output filtering, circuit simulation and PCB-level implementation.</p>
+              <div class="tech-row"><span>LTspice</span><span>PWM</span><span>MOSFET drive</span><span>PCB</span></div>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/class-d-audio-amplifier-radar" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline"><span class="project-domain">Analog Control</span><time>Jun 2025 - Nov 2025</time></div>
+              <h4>Analog Automatic Solar Tracker</h4>
+              <p>Co-developed a microcontroller-free single-axis solar tracker using LDR differential sensing, op-amp-based analog PID control, LTspice simulation, PCB implementation and a SOLIDWORKS enclosure.</p>
+              <div class="tech-row"><span>Analog PID</span><span>LTspice</span><span>PCB</span><span>SOLIDWORKS</span></div>
+              <a class="text-link" href="https://github.com/Abdul-Rahman-bme/Analog-Solar-Tracker" target="_blank" rel="noopener">Repository ↗</a>
+            </article>
+
+            <article class="project-card compact reveal">
+              <div class="project-topline"><span class="project-domain">Digital Hardware</span><time>2025</time></div>
+              <h4>UART Transceiver Implementation in FPGA</h4>
+              <p>Designed and implemented a UART transceiver using Verilog HDL on a DE0 Nano FPGA, focusing on digital communication and timing logic.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker">Capabilities</p><h2>Technical Skills</h2></div>
+          <p>Kept intentionally concise: core languages, platforms and tools I actively use in projects.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><h3>Programming</h3><p>Python · C · C++ · MATLAB</p></div>
+          <div class="skill-card reveal"><h3>ML &amp; Signal Processing</h3><p>PyTorch · scikit-learn · OpenCV · MNE · PyRiemann</p></div>
+          <div class="skill-card reveal"><h3>Embedded Systems</h3><p>ESP32 · ESP8266 · STM32 · Arduino · Raspberry Pi</p></div>
+          <div class="skill-card reveal"><h3>Communication</h3><p>MQTT · ESP-NOW · I2C · UART</p></div>
+          <div class="skill-card reveal"><h3>Engineering Tools</h3><p>Altium Designer · SOLIDWORKS · LTspice · Git</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker">Academic background</p><h2>Education</h2></div>
+        </div>
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <div class="education-date">Jun 2024 - Present</div>
+            <h3>University of Moratuwa</h3>
+            <p class="education-degree">B.Sc. Engineering (Hons.) in Biomedical Engineering</p>
+            <p>Department of Electronic and Telecommunication Engineering · Expected graduation: 2028</p>
+            <dl class="education-details">
+              <div><dt>CGPA</dt><dd>3.83/4.00</dd></div>
+              <div><dt>Selected coursework</dt><dd>Biomedical Instrumentation · Biomedical Device Design · Digital Signal Processing · Image Processing &amp; Machine Vision</dd></div>
+            </dl>
+          </article>
+          <article class="education-card reveal">
+            <div class="education-date">2020 - 2023</div>
+            <h3>Zahira College, Colombo</h3>
+            <p class="education-degree">G.C.E. Advanced Level · Physical Science Stream</p>
+            <dl class="education-details">
+              <div><dt>Results</dt><dd>3 A passes - Combined Mathematics, Physics and Chemistry</dd></div>
+              <div><dt>Island Rank</dt><dd>407</dd></div>
+              <div><dt>Z-score</dt><dd>2.3330</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="recognition">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker">Milestones</p><h2>Honors &amp; Certifications</h2></div>
+        </div>
+        <div class="recognition-layout">
+          <div class="recognition-block reveal">
+            <h3>Honors &amp; Awards</h3>
+            <ul class="clean-list">
+              <li><strong>2nd Runner-Up, Brainstorm 2025</strong><span>University of Moratuwa engineering innovation competition</span></li>
+              <li><strong>Dean's List</strong><span>Semesters 1, 2 &amp; 4 · University of Moratuwa</span></li>
+              <li><strong>Principal's Gold Medal</strong><span>Best Performance in G.C.E. A/L Physical Science Stream · Zahira College</span></li>
+              <li><strong>Sri Lanka Mathematics Olympiad 2018</strong><span>Distinction Award</span></li>
+            </ul>
+          </div>
+          <div class="recognition-block reveal">
+            <h3>Certifications</h3>
+            <ul class="clean-list certificates-list">
+              <li>
+                <strong>Machine Learning Specialization</strong>
+                <span>DeepLearning.AI / Coursera · 2025</span>
+                <a href="https://coursera.org/share/74756c16ab1b7697b07571ef62e9c28d" target="_blank" rel="noopener">View credential ↗</a>
+              </li>
+              <li>
+                <strong>Medical Image Processing</strong>
+                <span>MathWorks / Coursera · 2025</span>
+                <a href="https://coursera.org/share/e01f4f5b4779523f4c7ae36fcd0245b3" target="_blank" rel="noopener">View credential ↗</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="leadership">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker">Beyond coursework</p><h2>Leadership &amp; Volunteering</h2></div>
+        </div>
+        <div class="leadership-grid">
+          <article class="leadership-card reveal"><span>2025 - Present</span><h3>IEEE EMBS Student Branch Chapter</h3><p>Finance Lead, Brainstorm 2026 · Social Media Manager</p></article>
+          <article class="leadership-card reveal"><span>2026 - Present</span><h3>IEEE Signal Processing Society</h3><p>5-minute Video Clip Event Chair</p></article>
+          <article class="leadership-card reveal"><span>2025 - Present</span><h3>Electronic Club, University of Moratuwa</h3><p>IR Pillar Member · Shuttle Fest 2026 Chairperson</p></article>
+          <article class="leadership-card reveal"><span>2025</span><h3>Department Representative</h3><p>Department of Electronic and Telecommunication Engineering</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid reveal">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Let's connect.</h2>
+          <p>I am open to research collaborations, biomedical engineering projects and internship opportunities.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:abdulrahmanfarharth@gmail.com"><span>Email</span><strong>abdulrahmanfarharth@gmail.com</strong></a>
+          <a href="tel:+94789535127"><span>Phone</span><strong>+94 78 953 5127</strong></a>
+          <a href="https://github.com/Abdul-Rahman-bme" target="_blank" rel="noopener"><span>GitHub</span><strong>Abdul-Rahman-bme ↗</strong></a>
+          <a href="https://www.linkedin.com/in/abdulrahmanmf/" target="_blank" rel="noopener"><span>LinkedIn</span><strong>abdulrahmanmf ↗</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Abdul Rahman Mohamed Farharth</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
